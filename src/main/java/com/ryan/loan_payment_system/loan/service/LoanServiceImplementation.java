@@ -1,11 +1,11 @@
-package com.ryan.loan_payment_system.common.loan.service;
+package com.ryan.loan_payment_system.loan.service;
 
 import com.ryan.loan_payment_system.common.exception.ResourceNotFoundException;
-import com.ryan.loan_payment_system.common.loan.dto.CreateLoanRequest;
-import com.ryan.loan_payment_system.common.loan.dto.LoanResponse;
-import com.ryan.loan_payment_system.common.loan.entity.Loan;
-import com.ryan.loan_payment_system.common.loan.entity.LoanStatus;
-import com.ryan.loan_payment_system.common.loan.repository.LoanRepository;
+import com.ryan.loan_payment_system.loan.dto.CreateLoanRequest;
+import com.ryan.loan_payment_system.loan.dto.LoanResponse;
+import com.ryan.loan_payment_system.loan.entity.Loan;
+import com.ryan.loan_payment_system.loan.entity.LoanStatus;
+import com.ryan.loan_payment_system.loan.repository.LoanRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

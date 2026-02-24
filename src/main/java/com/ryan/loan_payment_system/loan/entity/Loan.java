@@ -1,4 +1,4 @@
-package com.ryan.loan_payment_system.common.loan.entity;
+package com.ryan.loan_payment_system.loan.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

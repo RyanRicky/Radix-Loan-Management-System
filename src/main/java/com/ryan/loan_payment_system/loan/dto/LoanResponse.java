@@ -1,6 +1,6 @@
-package com.ryan.loan_payment_system.common.loan.dto;
+package com.ryan.loan_payment_system.loan.dto;
 
-import com.ryan.loan_payment_system.common.loan.entity.Loan;
+import com.ryan.loan_payment_system.loan.entity.Loan;
 
 import java.math.BigDecimal;
 

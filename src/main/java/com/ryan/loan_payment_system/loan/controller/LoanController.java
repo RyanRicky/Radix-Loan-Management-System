@@ -1,9 +1,9 @@
-package com.ryan.loan_payment_system.common.loan.controller;
+package com.ryan.loan_payment_system.loan.controller;
 
 import com.ryan.loan_payment_system.common.dto.ApiResponse;
-import com.ryan.loan_payment_system.common.loan.dto.CreateLoanRequest;
-import com.ryan.loan_payment_system.common.loan.dto.LoanResponse;
-import com.ryan.loan_payment_system.common.loan.service.LoanService;
+import com.ryan.loan_payment_system.loan.dto.CreateLoanRequest;
+import com.ryan.loan_payment_system.loan.dto.LoanResponse;
+import com.ryan.loan_payment_system.loan.service.LoanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
