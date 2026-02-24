@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Objects;
 
@@ -48,6 +49,20 @@ public class LoanServiceImplementation implements LoanService{
     @Override
     public Page<LoanResponse> getAllLoans(Pageable pageable) {
         return loanRepository.findAll(pageable).map(LoanResponse::from);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Loan getLoanEntityById(Long loanId) {
+        Objects.requireNonNull(loanId, "Loan ID must not be null");
+        return loanRepository.findById(loanId)
+                .orElseThrow(() -> new ResourceNotFoundException("Loan not found with ID: " + loanId));
+    }
+
+    @Override
+    @Transactional
+    public Loan saveLoan(Loan loan) {
+        return loanRepository.save(loan);
     }
 
 }
